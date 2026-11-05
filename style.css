@@ -145,14 +145,8 @@
   @media (max-width: 600px) {
 
       #stage {
-          height: 100dvh;
-          position: fixed;
-          left: 50%;
-          transform: translate(-50%);
-          text-align: center;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
+          aspect-ratio: auto;
+            width: 100%;
       }
 
 
