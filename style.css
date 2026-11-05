@@ -139,5 +139,32 @@
       underline: none;
       color: black;
       font-size: 2.5cqw;
+  }
 
+
+  @media (max-width: 600px) {
+
+      #stage {
+          height: 100dvh;
+          position: fixed;
+          left: 50%;
+          transform: translate(-50%);
+          text-align: center;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+      }
+
+
+      .date {
+          font-size: 5cqw;
+      }
+
+      .text-links {
+          font-size: 3cqw;
+      }
+
+      .text-rechts {
+          font-size: 3cqw;
+      }
   }
