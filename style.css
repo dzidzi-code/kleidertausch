@@ -1,0 +1,143 @@
+  body {
+      margin: 0;
+      background: white;
+      overflow: hidden;
+      font-family: "Unbounded", sans-serif;
+
+  }
+
+
+  .unbounded-<uniquifier> {
+      font-family: "Unbounded", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+  }
+
+
+
+  h1 {
+      font-family: "Unbounded", sans-serif;
+      font-size: 12cqw;
+      font-weight: 900;
+      margin: 0;
+  }
+
+  .date {
+      font-size: 4cqw;
+      font-weight: 800;
+      padding: 0 1rem;
+  }
+
+
+  .date-container {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #stage {
+      height: 100dvh;
+      aspect-ratio: 9/16;
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .kleider-container {
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+      overflow: hidden;
+      container-type: inline-size;
+  }
+
+
+  .oberteile {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+
+  .unterteile {
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+
+  img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      object-fit: contain;
+  }
+
+
+  .oberteile .mitte {
+      transform: translateX(0);
+      transition: transform 0.5s ease-in-out;
+  }
+
+
+  .oberteile .rechts {
+      transform: translateX(100%);
+      transition: none;
+  }
+
+
+  .oberteile .links {
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in-out;
+  }
+
+
+  .unterteile .mitte {
+      transform: translateX(0);
+      transition: transform 0.5s ease-in-out;
+  }
+
+
+  .unterteile .rechts {
+      transform: translateX(-100%);
+      transition: none;
+  }
+
+
+  .unterteile .links {
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+  }
+
+
+  .text-links {
+      text-align: left;
+      position: absolute;
+      bottom: 0;
+      width: 27%;
+      font-weight: 300;
+      font-size: 2.5cqw;
+      padding-left: 1rem;
+
+  }
+
+  .text-rechts {
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+      padding: 1rem 0;
+      color: black;
+      padding-right: 1rem;
+  }
+
+  .text-rechts a {
+      underline: none;
+      color: black;
+      font-size: 2.5cqw;
+
+  }
